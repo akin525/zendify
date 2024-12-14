@@ -1,0 +1,1 @@
+export const defaultStaleTime: number = 1000 * 300 // 5 minute

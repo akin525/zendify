@@ -1,0 +1,18 @@
+import { create } from 'zustand';
+import { MyStore } from './type';
+
+// export const useSettlementsStore = create<MyStore>()((set) => ({
+//     page: 1,
+//     searchQuery: "",
+//     handlePageChange: (newPage) => set({ page: newPage }),
+//     handleSearch: (query) => set({ searchQuery: query || "", page: 1 }),
+// }));
+
+export const useSettlementsStore = create<MyStore>()((set) => ({
+    page: 1,
+    handlePageChange: (newPage) => set({ page: newPage }),
+}));
+export const useBusinessSettlementsStore = create<MyStore>()((set) => ({
+    page: 1,
+    handlePageChange: (newPage) => set({ page: newPage }),
+}));
