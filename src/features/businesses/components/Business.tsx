@@ -20,6 +20,8 @@ import { BusinessWalletTransactions } from "@/features/transactions";
 import { BusinessSettlements } from "@/features/settlements/components/BusinessSettlements";
 import {CreateBusinessVirtualAccounts} from "@/features/virtual-accounts/components/CreateBusinessVirtualAccounts.tsx";
 import {BusinessAccountsAdded} from "@/features/virtual-accounts/components/BusinessAccountsAdded.tsx";
+import BusinessFeeUpdate from "@/features/businesses/components/BusinessFeeUpdate.tsx";
+import BusinessAccessUpdate from "@/features/businesses/components/BusinessAccessUpdate.tsx";
 
 export function Business() {
   const { manage_business } = useAuthorization();
@@ -60,6 +62,11 @@ export function Business() {
       case "settlements":
         return <BusinessSettlements businessId={businessId} />;
       // return <ComingSoon />;
+      case "businessfeeupdate":
+        return <BusinessFeeUpdate data={data?.data} id={businessId} />;
+        case "businessaccessupdate":
+        return <BusinessAccessUpdate data={data?.data} id={businessId} />;
+
       default:
         return <BusinessDetails data={data?.data} />;
     }

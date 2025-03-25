@@ -1,5 +1,7 @@
 export const businessTabs = [
     { name: "Overview", id: "1" },
+    { name: "Configure BusinessFee", id: "10", query: "businessfeeupdate" },
+    { name: "Configure BusinessAccess", id: "11", query: "businessaccessupdate" },
     { name: "Transactions", id: "2", query: "transactions" },
     { name: "Wallet Transactions", id: "3", query: "wallet-transactions" },
     { name: "Settlements", id: "4", query: "settlements" },

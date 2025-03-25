@@ -45,7 +45,7 @@ export function Login() {
             <img
               src="/xendify.jpg"
               alt=""
-              className="h-auto w-full max-w-[100px]"
+              className="h-auto w-full"
             />
           </div>
 
